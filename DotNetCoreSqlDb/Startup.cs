@@ -29,7 +29,7 @@ namespace DotNetCoreSqlDb
         {
             services.AddControllersWithViews();
             services.AddDbContext<MyDatabaseContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+                    options.UseSqlServer(Configuration.GetConnectionString("Data Source=tcp:europointpoc-server.database.windows.net,1433;Initial Catalog=europointpoc-database;User Id=europointpoc-server-admin@europointpoc-server.database.windows.net;Password=6Y3K4022SK8LIK82$")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
